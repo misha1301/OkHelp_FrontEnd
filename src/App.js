@@ -15,9 +15,10 @@ const App = () => {
           <User_Profile />
           <Main_Constructor />
           <Filters />
-          <Footer />
+          
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
