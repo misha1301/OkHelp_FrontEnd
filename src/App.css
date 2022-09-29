@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-bg);
+
+}
+
+.workspace{
+    background-color: aqua;
+    max-width: 1230px;
+    margin: 45px auto;
+}
+
+p {
+    font-family: var(--font-family);
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+.section__padding{
+    padding: 25px 20px;
+}
+
+@media screen and (max-width: 1200px){
+    .section__padding{
+        padding: 25px 20px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .section__padding{
+        padding: 18px 15px;
+    }
+}

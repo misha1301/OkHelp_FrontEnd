@@ -1,0 +1,33 @@
+.userprofile__container{
+    width: 241px;
+    height: 447px;
+    background: var(--color-blog);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+ .userprofile__userdata_photo{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--color-subtext);
+ }
+
+.user__name{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--color-text);
+    margin-bottom: 6px;
+}
+
+.user__e-mail{
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    color: var(--color-subtext);
+}
+
+.userprofile__userdata_container{
+    
+}
