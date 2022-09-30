@@ -4,16 +4,39 @@
     box-sizing: border-box;
 }
 
-body {
+html, body, #root {
     background: var(--color-bg);
+    height: 100%;
+}
 
+.App{
+    border: solid 1px var(--color-subtext);
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .workspace{
+    display: flex;
+    flex-direction: row;
     border: solid 1px var(--color-subtext);
-    max-width: 1230px;
-    min-height: 100vh;
+    width: 100%; 
+    max-width: 1270px;
+    /* тут момент з висотою ворспейсу для футера */
+    min-height: 87.5%;
+    padding: 0px 20px ;
     margin: 45px auto;
+}
+/* Second tex montserat medium black color */
+.text__mont-med-black{
+    font-family: var(--font-family);
+    color: var(--color-text);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
 }
 
 p {

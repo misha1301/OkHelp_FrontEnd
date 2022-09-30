@@ -8,15 +8,16 @@ const App = () => {
   return (
     <div className='App'>
       <div className='workspace'>
-        <div className='header'>
+         <div className='workspace__left-container'>
           <Header />
-        </div>
-        <div>
           <User_Profile />
-          <Main_Constructor />
-          <Filters />
-          
         </div>
+        <div className='workspace__center-container'>
+          <Main_Constructor />
+        </div>
+        <div className='workspace__right-container'>
+          <Filters />
+        </div> 
       </div>
       <Footer />
     </div>

@@ -7,9 +7,7 @@ const Header = () => {
             <div className='header__logo-links'>
                 <p><a href='#okhelp'>OkHelp</a></p>
             </div>
-
         </div>
     )
 }
-
 export default Header

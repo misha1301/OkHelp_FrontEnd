@@ -1,6 +1,8 @@
 .userprofile__container{
+    /* display: none; */
     width: 241px;
     height: 447px;
+    margin: 26px 0px;
     background: var(--color-blog);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
