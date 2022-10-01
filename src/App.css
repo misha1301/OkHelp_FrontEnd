@@ -48,6 +48,10 @@ a {
     text-decoration: none;
 }
 
+.__line{
+    border-bottom: var(--line);
+}
+
 .section__padding{
     padding: 25px 20px;
 }

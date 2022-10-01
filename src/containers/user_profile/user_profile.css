@@ -1,26 +1,37 @@
 .userprofile__container{
     /* display: none; */
-    width: 241px;
-    height: 447px;
+    /* position sticky will be activate when position will be 0px in top of the page */
+    position: sticky;
+    top: 0; 
+    
+    flex-shrink: 0;
+    width: 240px;
+    min-height: 447px;
     margin: 26px 0px;
+    padding: 16px;
     background: var(--color-blog);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
- .userprofile__userdata_photo{
+.userprofile__userdata_photo{
     width: 56px;
     height: 56px;
     border-radius: 50%;
     overflow: hidden;
+    flex-shrink: 0;
     background-color: var(--color-subtext);
- }
-
+}
+.userprofile__userdata_container{
+    /* border: solid 1px var(--color-subtext); */
+}
 .user__name{
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
     color: var(--color-text);
     margin-bottom: 6px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .user__e-mail{
@@ -28,8 +39,51 @@
     font-size: 11px;
     line-height: 13px;
     color: var(--color-subtext);
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.userprofile__userdata_text{
+    /* border: solid 1px var(--color-subtext);   */
+    width: 133px;
+    margin-left: 15px;
+}
+.userprofile__userdata_name,
+.userprofile__userdata_e-mail{
+    box-sizing: content-box;
 }
 
 .userprofile__userdata_container{
-    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+
+}
+/* Buttons container in user's menu */
+.userprofile__buttons-container,
+.userprofile__button-selector,
+.userprofile__dynamic_button-container,
+.userprofile__se_button-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.__line{
+    margin: 12px 0px;
+}
+
+.userprofile__buttons-container button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10px;
+    height: 41px;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+}
+
+.userprofile__buttons-container p{
+    margin-left: 10px;
 }
