@@ -10,7 +10,7 @@ footer {
     font-weight: 900;
     font-size: 35px;
     line-height: 41px;
-    color: var(--brand-color);
+    color: var(--color-brand);
 }
 
 .footer__workspace{

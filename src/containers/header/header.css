@@ -1,6 +1,6 @@
 .header__logo-links p{
     font-family: var(--brand-font);
-    color: var(--brand-color);
+    color: var(--color-brand);
     font-style: normal;
     line-height: 59px;
     font-weight: 900;
@@ -9,5 +9,5 @@
 }
 
 .header__container{
-    border: solid 1px var(--color-subtext);
+    border: solid 1px rgb(95, 53, 53);
 }

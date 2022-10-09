@@ -22,12 +22,31 @@ const User_Profile = () => {
       <div className='user__line __line'></div>
       <div className='userprofile__buttons-container' >
         <div className='userprofile__button-selector'>
-          <button className='user__btn_label-give --user__btn' name=''>
-            <p className='text__mont-med-black'>Пропоную роботу</p>
-          </button>
-          <button className='user__btn_label-looking_for --user__btn' name=''>
-            <p className='text__mont-med-black'>Шукаю роботу</p>
-          </button>
+          <div className='user__btn_label'>
+            <input
+              type='radio'
+              name='user__purpose-selection'
+              id='__give-radio'>
+            </input>
+            <label
+              for='__give-radio'
+              className='user__btn_label-give  --user__btn'>
+              <p className='text__mont-med-black'>Пропоную роботу</p>
+            </label>
+          </div>
+          <div className='user__btn_label'>
+            <input
+              type='radio'
+              name='user__purpose-selection'
+              id='__looking_for-radio'
+              >
+            </input>
+            <label
+              for='__looking_for-radio'
+              className='user__btn_label-look  --user__btn'>
+              <p className='text__mont-med-black'>Шукаю роботу</p>
+            </label>
+          </div>
         </div>
         <div className='user__line __line'></div>
         <div className='userprofile__dynamic_button-container'>

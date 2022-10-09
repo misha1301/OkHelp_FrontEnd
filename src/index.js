@@ -1,8 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './App';
 import './index.css';
+import App from './App';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <BrowserRouter>
+        <Routes>
+            <Route path='/*' element={<App />} />
+        </Routes>
+    </BrowserRouter>,
+    document.getElementById('root')
+    //ReactDOM.render(<App />, document.getElementById('root'))
+);
 

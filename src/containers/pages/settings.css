@@ -1,0 +1,10 @@
+.settings__constructor{
+    background-color: var(--color-blog);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    max-width: 953px;
+    width: 100%;
+    min-height: 628px;
+    margin: 26px 0px 26px 36px;
+    padding: 20px 20px 40px 20px;
+}

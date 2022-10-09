@@ -9,6 +9,13 @@ html, body, #root {
     height: 100%;
 }
 
+label, button{
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
 .App{
     border: solid 1px var(--color-subtext);
     min-height: 100%;
@@ -18,9 +25,10 @@ html, body, #root {
     justify-content: space-between;
 }
 
-.workspace{
+/* ---- Main workspace ---- */
+.workspace__home{
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     border: solid 1px var(--color-subtext);
     width: 100%; 
     max-width: 1270px;
@@ -29,20 +37,32 @@ html, body, #root {
     padding: 0px 20px ;
     margin: 45px auto;
 }
+.workspace__routes{
+    border: solid 1px var(--color-subtext);
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    height: 100%;
+}
+/* ^---- Main workspace ----^ */
+
+.workspace__center-container{
+    width: 100%;
+    height: 100%;
+}
+
 /* Second tex montserat medium black color */
 .text__mont-med-black{
-    font-family: var(--font-family);
-    color: var(--color-text);
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
 }
 
-p {
+h1, h2, h3, p {
     font-family: var(--font-family);
+    color: var(--color-text);
 }
-
 a {
     color: unset;
     text-decoration: none;
