@@ -1,4 +1,4 @@
-.settings__constructor{
+.settings__constructor {
     background-color: var(--color-blog);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
@@ -7,4 +7,128 @@
     min-height: 628px;
     margin: 26px 0px 26px 36px;
     padding: 20px 20px 40px 20px;
+}
+
+
+.data__editing-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    /* flex-wrap: nowrap; */
+}
+
+.main__editing-section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 1;
+}
+
+.photo__editing-section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 1;
+}
+
+.photo__editing-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.user__photo-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    margin: 20px 30px 20px 0px;
+
+    overflow: hidden;
+    border: 1px solid var(--color-brand);
+}
+
+.upload__photo-drop {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 225px;
+}
+
+.upload__photo-drop p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--color-upload);
+}
+
+.upload__photo-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 215px;
+    min-width: 160px;
+    width: 100%;
+    margin: 20px 0px;
+    border: 2px dashed var(--color-upload);
+    border-radius: var(--border-radius);
+    transition: all ease 500ms;
+}
+
+.upload__photo-section img {
+    margin: 3px 0px;
+    transition: all ease 500ms;
+}
+
+.upload__photo-section p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+
+    color: var(--color-upload);
+    transition: all ease 500ms;
+}
+
+.upload__photo-section input {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.upload__photo-section:hover {
+    border: 2px dashed var(--color-brand);
+}
+
+.upload__photo-section:hover>p {
+    color: var(--color-brand);
+}
+
+.upload__photo-section:hover>.upload__icon {
+    opacity: 60%;
+}
+
+section {
+    border: 1px dashed #A4A4A4;
+}
+
+@media screen and (max-width: 960px) {
+    .data__editing-section {
+        flex-direction:column;
+        flex-wrap: wrap;
+    }
+    .upload__photo-drop {
+        max-width: unset;
+    }
 }

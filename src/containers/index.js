@@ -10,4 +10,7 @@ export {default as User_Profile} from './user_profile/User_Profile';
 export {default as Layout} from './pages/Layout';
 export {default as Home} from './pages/Home';
 export {default as RequireAuth} from './pages/RequireAuth';
-export {default as Users} from './user_profile/Users';
+export {default as EmailVerification} from './login/EmailVerification';
+export {default as Hello} from './pages/HelloPage';
+export {default as EmailAuth} from './pages/EmailAuth';
+export {default as PersistLogin} from './pages/PersistLogin';

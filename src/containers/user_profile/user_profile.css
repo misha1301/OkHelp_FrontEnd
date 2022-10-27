@@ -101,7 +101,7 @@
 
 #__give-radio,
 #__looking_for-radio{
-    display: none;
+    /* display: none; */
 }
 
 #__give-radio:checked + label,

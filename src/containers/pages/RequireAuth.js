@@ -5,11 +5,14 @@ const RequireAuth = () =>{
     const { auth } = useAuth();
     const location = useLocation();
 
+    console.log("status from RequireAuth :");
+    console.log(auth?.status);
+
     return(
-        <Outlet />
-        // auth?.user
-        //     ? <Outlet/>
-        //     :<Navigate to="/login" atate={{ from: location}} replace />
+        //<Outlet />
+         auth?.status == 200
+             ? <Outlet/>
+             :<Navigate to="/login" atate={{ from: location}} replace />
     );
 }
 

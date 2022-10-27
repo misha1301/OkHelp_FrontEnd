@@ -1,17 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
+
 
 import './index.css';
 import App from './App';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { AuthProvider } from "./containers/context/AuthProvider";
 
-ReactDOM.render(
+const container = document.getElementById('root');
+const root = createRoot(container); // createRoot(container!) if you use TypeScript
+root.render(
     <BrowserRouter>
-        <Routes>
-            <Route path='/*' element={<App />} />
-        </Routes>
-    </BrowserRouter>,
-    document.getElementById('root')
+        <AuthProvider>
+            <Routes>
+                <Route path='*' element={<App />} />
+            </Routes>
+        </AuthProvider>
+    </BrowserRouter>//,
+    //document.getElementById('root')
     //ReactDOM.render(<App />, document.getElementById('root'))
 );
 

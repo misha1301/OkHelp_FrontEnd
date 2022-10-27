@@ -5,8 +5,11 @@
 }
 
 html, body, #root {
-    background: var(--color-bg);
+    /* background: var(--color-bg); */
     height: 100%;
+}
+html{
+    background: var(--color-bg);
 }
 
 label, button{

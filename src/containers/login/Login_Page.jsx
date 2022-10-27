@@ -1,16 +1,22 @@
 import React from 'react'
-import { useRef, useState, useEffect, useContext } from 'react';
-import './login.css';
-import { Link, useLocation, Navigate, Outlet } from "react-router-dom";
-import useAuth from "../hooks/useAuth"
 
+import { useRef, useState, useEffect, useContext } from 'react';
+import { Link, useLocation, useNavigate, Navigate, Outlet } from "react-router-dom";
+
+import './login.css';
+
+import useAuth from "../hooks/useAuth"
 import axios from '../../api/axios';
-const LOGIN_URL = '/auth';
+import UserData from '../user_profile/UserData';
+const LOGIN_URL = '/login';
 
 const Login_Page = () => {
 
   const { setAuth } = useAuth();
+
   const location = useLocation();
+  const navigate = useNavigate();
+  const from = location.state?.from?.pathname || "/";
 
   const userRef = useRef();
   const errRef = useRef();
@@ -37,30 +43,47 @@ const Login_Page = () => {
       const response = await axios.post(LOGIN_URL,
         JSON.stringify({ userEmail: uemail, password: pwd }),
         {
-          headers: { 'Content-Type': 'application/json' },
+          headers: {
+            'Content-Type': 'application/json'
+          },
           withCredentials: true
         }
       );
-      console.log(response?.data);
+      //console.log(response?.data);
+      //console.log(response?.status);
       //console.log(response.accessToken);
       console.log(JSON.stringify(response));
+
       const accessToken = response?.data?.accessToken;
-      const roles = response?.data?.roles;
-      setAuth({user, uemail, pwd, roles, number, accessToken });
+      const refreshToken = response?.data?.refreshToken;
+      const status = response?.status;
+
+      localStorage.setItem('userdata', JSON.stringify({
+        uemail: uemail,
+        status: status
+      }));
+      localStorage.setItem('security', JSON.stringify({
+        accessToken: accessToken,
+        refreshToken: refreshToken
+      }));
+
+      setAuth({ uemail, status, accessToken, refreshToken });
+
+      setSuccess(true);
       setUemail('');
       setPwd('');
-      setSuccess(true);
+      //navigate(from, {replace: true});
+
     } catch (err) {
-      if(!err?.response){
+      if (!err?.response) {
         setErrMsg('No Server Response');
-      }else if(err.response?.status === 400){
+      } else if (err.response?.status === 400) {
         setErrMsg('Missing Useremail or Password');
-      }else {
+      } else {
         setErrMsg('Login Failed');
       }
       errRef.current.focus();
     }
-    console.log(uemail, pwd);
   }
 
   return (
