@@ -1,20 +1,20 @@
 import React from 'react'
 import { useEffect } from 'react';
-import './saved_vacancies.css';
+import './submited_requests.css';
 import useAuth from '../../hooks/useAuth';
 
-const Saved_Vacancies = () => {
+const Submited_Requests= () => {
 
   const {setUFocus} = useAuth();
   useEffect(() => {
-    setUFocus("Збережені вакансії");
+    setUFocus("Затверджені заявки");
   },[]);
 
   return (
     <div>
-     Saved_Vacancies
+     Submited_Requests
     </div>
   )
 }
 
-export default Saved_Vacancies
+export default Submited_Requests

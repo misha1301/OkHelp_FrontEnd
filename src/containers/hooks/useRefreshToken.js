@@ -15,7 +15,6 @@ const useRefreshToken = () => {
     console.log(accessToken);
     console.log(refreshToken);
     console.log("UseRefreshToken input auth data END");
-    
 
     const refresh = async () => {
         const response = await axios.post('/refresh-token',

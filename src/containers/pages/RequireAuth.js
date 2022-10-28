@@ -9,10 +9,10 @@ const RequireAuth = () =>{
     console.log(auth?.status);
 
     return(
-        //<Outlet />
-         auth?.status == 200
-             ? <Outlet/>
-             :<Navigate to="/login" atate={{ from: location}} replace />
+        <Outlet />
+        //  auth?.status == 200
+        //      ? <Outlet/>
+        //      :<Navigate to="/login" state={{ from: location}} replace />
     );
 }
 

@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 
 const Layout = () => {
   return (
-    <main className='workspace__center-container'>
+    <main className='workspace__routes'>
         <Outlet />
     </main>
   )

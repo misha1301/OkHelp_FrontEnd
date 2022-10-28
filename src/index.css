@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
 
+@font-face {
+  font-family: 'Igra Sans';
+  src: url('./fonts/IgraSans.eot');
+  src: local('Igra Sans'), local('IgraSans'),
+      url('./fonts/IgraSans.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/IgraSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
 
   --brand-font:'Roboto', sans-serif;
@@ -9,7 +19,7 @@
   
   --box-shadow: 0px 0px 40px 5px rgba(156, 200, 182, 0.3);
   --color-bg: #ebf3f194;
-  --color-bg_light: #ebf3f169;
+  --color-bg_light: #F7FAF9;
   --color-footer : #FFFFFF;
   --color-blog: #FFFFFF;
   --color-text: #262626;

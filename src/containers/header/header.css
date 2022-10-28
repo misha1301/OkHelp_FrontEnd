@@ -1,13 +1,26 @@
-.header__logo-links p{
+.header__logo-links p {
     font-family: var(--brand-font);
     color: var(--color-brand);
     font-style: normal;
     line-height: 59px;
     font-weight: 900;
     font-size: 50px;
-    margin-left: 15px;    
+    margin-left: 15px;
 }
 
-.header__container{
+.header__container {
+    display: flex;
+    flex-direction: row;
     border: solid 1px rgb(95, 53, 53);
+}
+
+.header__container article {
+    font-family: "Igra Sans", sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-text);
+    margin-left: 100px;
 }

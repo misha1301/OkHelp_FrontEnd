@@ -76,7 +76,7 @@
     transition: 500ms;
 }
 
-.userprofile__buttons-container button, .--user__btn{
+.--user__btn{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -86,6 +86,7 @@
     width: 100%;
     border: 0;
     border-radius: 10px;
+    background: var(--color-blog);
 }
 
 .user__btn_label{
@@ -95,13 +96,15 @@
     align-items: center;
 }
 
-.user__btn_label :hover{
+.user__btn_label:hover,
+.--user__btn:hover{
     background: var(--color-bg_light);
 }
 
+
 #__give-radio,
 #__looking_for-radio{
-    /* display: none; */
+    display: none;
 }
 
 #__give-radio:checked + label,
@@ -119,3 +122,16 @@
     margin-left: 10px;
 }
 
+.active p {
+    color: var(--color-brand);
+    font-weight: 600;
+}
+.active .--user__btn {
+    border-radius: 10px;
+    background: var(--color-bg);
+}
+
+.active_bg .--user__btn {
+    border-radius: 10px;
+    background: var(--color-bg);
+}

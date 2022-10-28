@@ -1,9 +1,20 @@
 import React from 'react';
+import { useEffect } from 'react';
 import './settings.css';
 import upload from '../../assets/upload.svg';
 import userphoto from '../../assets/userphoto.svg';
+import useAuth from '../hooks/useAuth';
+
 
 const Settings = () => {
+
+  const {setUFocus} = useAuth();
+  useEffect(() => {
+    setUFocus("Налаштування");
+  },[])
+  
+
+
   return (
     <section className='settings__constructor'>
       <div>

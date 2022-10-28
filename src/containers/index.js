@@ -1,11 +1,9 @@
-export {default as Features } from './features/Features';
 export {default as Filters } from './filters/Filters';
 export {default as Footer } from './footer/Footer';
 export {default as Header } from './header/Header';
 export {default as Login_Page } from './login/Login_Page';
 export {default as Register_Page } from './login/Register_Page';
 export {default as Password_Recovery } from './login/Password_Recovery';
-export {default as Main_Constructor } from './main_constructor/Main_Constructor';
 export {default as User_Profile} from './user_profile/User_Profile';
 export {default as Layout} from './pages/Layout';
 export {default as Home} from './pages/Home';
@@ -14,3 +12,15 @@ export {default as EmailVerification} from './login/EmailVerification';
 export {default as Hello} from './pages/HelloPage';
 export {default as EmailAuth} from './pages/EmailAuth';
 export {default as PersistLogin} from './pages/PersistLogin';
+export {default as Settings} from './pages/Settings';
+export {default as UserModeAuth} from './pages/UserModeAuth';
+export {default as CustomLink} from './pages/CustomLink';
+
+export {default as All_User_Vacancies} from './main_constructor/all_user_vacancies/All_User_Vacancies';
+export {default as Aplications_For_Submit} from './main_constructor/aplications_for_submit/Aplications_For_Submit';
+export {default as Employee_Request} from './main_constructor/employee_request/Employee_Request';
+export {default as Looking_For_Jobs} from './main_constructor/looking_for_jobs/Looking_For_Jobs';
+export {default as Post_Jobs_Constructor} from './main_constructor/post_jobs_constructor/Post_Jobs_Constructor';
+export {default as Saved_Vacancies} from './main_constructor/saved_vacancies/Saved_Vacancies';
+export {default as Submited_Vacancies} from './main_constructor/submited_vacancies/Submited_Vacancies';
+export {default as Submited_Requests} from './main_constructor/submited_requests/Submited_Requests';
