@@ -11,9 +11,9 @@ const Employee_Request = () => {
   },[]);
 
   return (
-    <div>
+    <section className='main__constructor-container'>
      Employee_Request
-    </div>
+    </section>
   )
 }
 

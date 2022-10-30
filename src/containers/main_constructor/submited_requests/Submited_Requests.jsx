@@ -11,9 +11,9 @@ const Submited_Requests= () => {
   },[]);
 
   return (
-    <div>
+    <section className='main__constructor-container'>
      Submited_Requests
-    </div>
+    </section>
   )
 }
 

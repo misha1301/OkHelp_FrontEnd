@@ -11,9 +11,9 @@ const Looking_For_Jobs = () => {
   },[]);
 
   return (
-    <div>
+    <section className='main__constructor-container'>
      Looking_For_Jobs
-    </div>
+    </section>
   )
 }
 

@@ -11,9 +11,9 @@ const Submited_Vacancies = () => {
   },[]);
 
   return (
-    <div>
+    <section className='main__constructor-container'>
      Submited_Vacancies
-    </div>
+    </section>
   )
 }
 

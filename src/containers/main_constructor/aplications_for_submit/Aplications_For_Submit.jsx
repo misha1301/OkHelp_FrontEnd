@@ -11,9 +11,9 @@ const Aplications_For_Submit = () => {
   },[]);
 
   return (
-    <div>
+    <section className='main__constructor-container'>
      Aplications_For_Submit
-    </div>
+    </section>
   )
 }
 

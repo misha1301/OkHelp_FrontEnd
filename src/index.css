@@ -23,10 +23,12 @@
   --color-footer : #FFFFFF;
   --color-blog: #FFFFFF;
   --color-text: #262626;
+  --color-text-unactive: #A4A4A4;
   --color-upload: #434343;
   --color-link-text: #369FFF;
   --color-subtext: #B3B3B3;
   --border-radius: 20px;
   --line: 1px solid #D1DCD9;
+  --white: white;
 
 }

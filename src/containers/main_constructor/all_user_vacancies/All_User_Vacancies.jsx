@@ -11,9 +11,9 @@ const All_User_Vacancies = () => {
   },[]);
 
   return (
-    <div>
+    <section className='main__constructor-container'>
      All_User_Vacancies
-    </div>
+    </section>
   )
 }
 

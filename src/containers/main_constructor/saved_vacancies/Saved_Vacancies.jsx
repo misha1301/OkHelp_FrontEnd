@@ -11,9 +11,9 @@ const Saved_Vacancies = () => {
   },[]);
 
   return (
-    <div>
+    <section className='main__constructor-container'>
      Saved_Vacancies
-    </div>
+    </section>
   )
 }
 
