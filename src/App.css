@@ -82,6 +82,7 @@ button {
 
 
     width: 100%;
+    min-width:340px;
     min-height: 68px;
 }
 

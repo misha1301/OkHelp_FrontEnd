@@ -10,6 +10,14 @@ const Post_Jobs_Constructor = () => {
   const [socialCheck, setSocialCheck] = useState(false);
   const [locationCheck, setLocationCheck] = useState(false);
 
+  
+  const textAreaSize = (e) => {
+    e.target.style.height = '68px';
+    console.log(e.target.scrollHeight);
+    e.target.style.height = `${e.target.scrollHeight}px`;
+  }
+
+
   const { setUFocus } = useAuth();
   useEffect(() => {
     setUFocus("Пропоную роботу");
@@ -22,19 +30,29 @@ const Post_Jobs_Constructor = () => {
           <section className='data__post_job-section'>
             <section className='main__post_job-section'>
               <label><h3>Що ви пропонуєте?*</h3></label>
-              <input
+              <textarea
+                onChange={textAreaSize}
+                class="__area_input-fields"
+                placeholder="Нариклад:  Помити машину Wolgswagen golf 4">
+              </textarea>
+              {/* <input
                 className='input__field-post-job_title __input__fields'
                 type='text'
                 placeholder='Нариклад:  Помити машину Wolgswagen golf 4'
                 autoComplete="off"
-              />
+              /> */}
               <label><h3>Детальніший опис</h3></label>
-              <input
+              <textarea
+                onChange={textAreaSize}
+                class="__area_input-fields"
+                placeholder="Нариклад: Надаю всі миючі засоби та матеріали">
+              </textarea>
+              {/* <input
                 className='input__field-post-job_subtitle __input__fields'
                 type='text'
                 placeholder='Нариклад: Надаю всі миючі засоби та матеріали'
                 autoComplete="off"
-              />
+              /> */}
               <label><h3>Адреса*</h3></label>
               <input
                 className='input__field-post-job_address __input__fields'
@@ -138,8 +156,8 @@ const Post_Jobs_Constructor = () => {
             className='input__btn-post_job __btn'
             type='submit'
             value='Розмістити вакансію'
-
           />
+
         </form>
       </div>
     </section>

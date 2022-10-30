@@ -1,3 +1,15 @@
+.user__post_job-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.data__post_job-section{
+    display: flex;
+    flex-direction: row;
+}
+
 .user__post_job-form h3 {
     font-weight: 500;
     font-size: 17px;
@@ -17,11 +29,21 @@
 .main__post_job-section {
     display: flex;
     flex-direction: column;
+    margin-right: 40px;
+    min-width: 304px;
+    flex-basis: 100%;
+}
+select option{
+    font-family: var( --font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .additional__post-section {
     display: flex;
     flex-direction: column;
+    flex-basis: 100%;
 }
 
 .additional__post-section label {
@@ -53,8 +75,9 @@ input[type='checkbox']:checked+p {
     border-radius: 20px;
 
     margin: 15px 0px;
-
     padding: 18px;
+
+    font-family: var( --font-family);
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -68,8 +91,9 @@ input[type='checkbox']:checked+p {
 }
 
 .__btn {
-    max-width: 400px;
-    width: 100%;
+    max-width: 428px;
+    min-width: 304px;
+    width: 47.6%;
     height: 68px;
     border-radius: 20px;
     border: 0;
@@ -84,7 +108,9 @@ input[type='checkbox']:checked+p {
     margin-top: 5px;
 }
 
+.__area_input-fields::placeholder,
 .__input__fields::placeholder {
+    font-family: var( --font-family);
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
@@ -95,6 +121,7 @@ input[type='checkbox']:checked+p {
     border-color: var(--color-brand);
 } */
 
+.__area_input-fields:focus,
 .__input__fields:focus {
     outline: none !important;
     border-color: var(--color-brand);
@@ -125,4 +152,48 @@ input[type='checkbox']:checked+p {
 .paiment__option-container{
     display: flex;
     flex-direction: column;
+}
+.__area_input-fields{
+
+    max-width: 600px;
+    width: 100%;
+    height: 68px;
+    border-radius: 20px;
+
+    margin: 15px 0px;
+    padding: 22px 18px;
+
+    font-family: var( --font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+
+    background: var(--color-blog);
+    border: solid 2px var(--color-subtext);
+    color: var(--colot-text);
+    background-color: var(--color-bg);
+
+    /* transition: all ease 500ms; */
+    outline: none;
+    resize: none;
+}
+.__area_input-fields::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+
+
+@media screen and (max-width: 960px) {
+    .data__post_job-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .main__post_job-section {
+        margin-right: 0px;
+    }
+    .__btn {
+        max-width: 600px;
+        width: 100%;
+    }
 }
