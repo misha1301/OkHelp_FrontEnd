@@ -16,7 +16,8 @@
   --brand-font:'Roboto', sans-serif;
   --font-family: 'Montserrat', sans-serif;
   --color-brand:#26D19E;
-  
+  --color-brand-active:#22c090;
+
   --box-shadow: 0px 0px 40px 5px rgba(156, 200, 182, 0.3);
   --color-bg: #ebf3f194;
   --color-bg_light: #F7FAF9;
@@ -29,6 +30,10 @@
   --color-subtext: #B3B3B3;
   --border-radius: 20px;
   --line: 1px solid #D1DCD9;
+  --input-border: solid 1px var(--color-brand);
+  --input-border-active: solid 1px var(--color-link-text);
+  --input-border-disabled: solid 1px var(--color-bg_light);
+
   --white: white;
 
 }

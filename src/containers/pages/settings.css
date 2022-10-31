@@ -119,10 +119,6 @@
     opacity: 60%;
 }
 
-section {
-    border: 1px dashed #A4A4A4;
-}
-
 @media screen and (max-width: 960px) {
     .data__editing-section {
         flex-direction:column;

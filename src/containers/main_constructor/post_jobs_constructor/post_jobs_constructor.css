@@ -36,8 +36,8 @@
 select option{
     font-family: var( --font-family);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 18px;
 }
 
 .additional__post-section {
@@ -79,25 +79,28 @@ input[type='checkbox']:checked+p {
 
     font-family: var( --font-family);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 18px;
 
     background: var(--color-blog);
-    border: solid 2px var(--color-subtext);
+    border: var(--input-border);
     color: var(--colot-text);
-    background-color: var(--color-bg);
+    background-color: var(--color-bg_light);
 
     transition: all ease 500ms
 }
 
 .__btn {
+    outline: none !important;
     max-width: 428px;
     min-width: 304px;
     width: 47.6%;
     height: 68px;
     border-radius: 20px;
     border: 0;
+    /* transition: all ease 500ms */
 }
+
 
 .input__btn-post_job {
     background-color: var(--color-brand);
@@ -107,6 +110,12 @@ input[type='checkbox']:checked+p {
     line-height: 21px;
     margin-top: 5px;
 }
+
+.input__btn-post_job:active{
+    outline: none !important;
+    background-color: var(--color-brand-active);
+}
+
 
 .__area_input-fields::placeholder,
 .__input__fields::placeholder {
@@ -124,13 +133,13 @@ input[type='checkbox']:checked+p {
 .__area_input-fields:focus,
 .__input__fields:focus {
     outline: none !important;
-    border-color: var(--color-brand);
+    border: var(--input-border-active);
     background-color: var(--color-blog);
 }
 
 .__input__fields:disabled,
 .__input__fields:disabled+p {
-    border-color: var(--color-bg);
+    border: var(--input-border-disabled);
     color: var(--color-text-unactive);
 }
 
@@ -165,13 +174,13 @@ input[type='checkbox']:checked+p {
 
     font-family: var( --font-family);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 18px;
 
     background: var(--color-blog);
-    border: solid 2px var(--color-subtext);
+    border: var(--input-border);
     color: var(--colot-text);
-    background-color: var(--color-bg);
+    background-color: var(--color-bg_light);
 
     /* transition: all ease 500ms; */
     outline: none;
@@ -180,9 +189,6 @@ input[type='checkbox']:checked+p {
 .__area_input-fields::-webkit-scrollbar{
     width: 0px;
 }
-
-
-
 
 @media screen and (max-width: 960px) {
     .data__post_job-section{
