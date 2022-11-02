@@ -1,0 +1,101 @@
+.vacance__data-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    border-bottom: var(--line);
+    margin-bottom: var(--vac-line-margin);
+    padding-bottom: var(--vac-line-padding);
+}
+
+.vacance__data-container div {
+    display: flex;
+    flex-direction: row;
+}
+
+.vacance__title-container {
+    justify-content: space-between;
+    margin-bottom: var(--vac-like-margin-bott);
+}
+
+.vacance__title {
+    font-weight: var(--semibold);
+    font-size: var(--vac-tytle-size);
+    line-height: var(--vac-tytle-height);
+    color: var(--color-text);
+
+    transition: all ease 500ms;
+}
+
+
+.vacance__requests-data,
+.vacance__requests-deadline,
+.vacance__payment-container p {
+    font-weight: var(--medium);
+    font-size: var(--vac-subtytle-size);
+    line-height: var(--vac-subtytle-height);
+    color: var(--color-text-unactive);
+
+    margin-bottom: var(--vac-body-text-margin-bott);
+}
+.vacance__requests-data,
+.vacance__requests-deadline{
+    display: flex;
+    flex-direction: row;
+}
+
+.vacance__requests-data p{
+    color: var(--color-text);
+    margin-left: 5px;
+}
+.vacance__requests-deadline p{
+    color: var(--color-yelow);
+    margin-left: 5px;
+}
+
+.vacance__location,
+.vacance__subtitle {
+    font-weight: var(--medium);
+    font-size: var(--vac-subtytle-size);
+    line-height: var(--vac-subtytle-height);
+    color: var(--color-text);
+
+    margin-bottom: var(--vac-body-text-margin-bott);
+}
+
+/* .vacance__data-container:hover, */
+.vacance__data-container:hover>div h2 {
+    cursor: pointer;
+    color: var(--color-brand);
+}
+
+.vacance__location-container img {
+    margin-right: 5px;
+}
+
+.__vacance_btn {
+    outline: none !important;
+    width: 116px;
+    height: 33px;
+    margin-left: auto;
+
+    font-weight: var(--medium);
+    font-size: var(--vac-subtytle-size);
+    line-height: var(--vac-subtytle-height);
+
+    color: var(--white);
+    border: 0;
+    outline: none !important;
+    background: var(--color-brand);
+    border-radius: Var(--border-radius-small);
+}
+
+.__vacance_btn:hover {
+    cursor: pointer;
+}
+
+.__vacance_btn:active {
+    outline: none !important;
+    background-color: var(--color-brand-active);
+}

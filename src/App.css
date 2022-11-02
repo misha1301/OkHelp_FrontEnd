@@ -63,7 +63,7 @@ button {
 
 /* ^---- Main workspace ----^ */
 .workspace__left-container {
-    margin-right: 36px;
+    margin-right: 20px;
 }
 
 .workspace__center-container {
@@ -134,7 +134,7 @@ a {
         margin-left: 5px;
     }
     .workspace__left-container {
-        margin-right: 25px;
+        margin-right: 15px;
     }
 
 }

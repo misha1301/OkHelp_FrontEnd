@@ -21,20 +21,21 @@
 .main__editing-section {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    flex-basis: 1;
+    margin-right: 40px;
+    min-width: 304px;
+    flex-basis: 100%;
 }
 
 .photo__editing-section {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    flex-basis: 1;
+    flex-basis: 100%;
 }
 
 .photo__editing-box {
     display: flex;
     flex-direction: row;
+
 }
 
 .user__photo-preview {
@@ -126,5 +127,8 @@
     }
     .upload__photo-drop {
         max-width: unset;
+    }
+    .main__editing-section {
+        margin-right: 0px;
     }
 }
