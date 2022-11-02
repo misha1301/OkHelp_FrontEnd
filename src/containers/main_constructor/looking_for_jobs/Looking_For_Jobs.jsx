@@ -52,7 +52,6 @@ const Looking_For_Jobs = () => {
 
   return (
     <section className='main__constructor-container'>
-
       {vacancies.map(vacance =>
         <div className='vacance__data-container' key={vacance.id}>
           <div className='vacance__title-container'>
@@ -73,8 +72,6 @@ const Looking_For_Jobs = () => {
           <input type='button' value='Подати заявку' className='__vacance_btn' />
         </div>
       )}
-
-
     </section>
   )
 }

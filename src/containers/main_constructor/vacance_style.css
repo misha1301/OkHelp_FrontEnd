@@ -20,6 +20,8 @@
 }
 
 .vacance__title {
+
+    font-family: var( --font-family);
     font-weight: var(--semibold);
     font-size: var(--vac-tytle-size);
     line-height: var(--vac-tytle-height);
@@ -32,6 +34,7 @@
 .vacance__requests-data,
 .vacance__requests-deadline,
 .vacance__payment-container p {
+    font-family: var( --font-family);
     font-weight: var(--medium);
     font-size: var(--vac-subtytle-size);
     line-height: var(--vac-subtytle-height);
@@ -39,6 +42,8 @@
 
     margin-bottom: var(--vac-body-text-margin-bott);
 }
+
+.vacance__submited-phone-number,
 .vacance__requests-data,
 .vacance__requests-deadline{
     display: flex;
@@ -56,6 +61,7 @@
 
 .vacance__location,
 .vacance__subtitle {
+    font-family: var( --font-family);
     font-weight: var(--medium);
     font-size: var(--vac-subtytle-size);
     line-height: var(--vac-subtytle-height);
@@ -74,28 +80,69 @@
     margin-right: 5px;
 }
 
+.__vacance_btn-cansle,
 .__vacance_btn {
-    outline: none !important;
     width: 116px;
     height: 33px;
     margin-left: auto;
 
+    font-family: var( --font-family);
     font-weight: var(--medium);
     font-size: var(--vac-subtytle-size);
     line-height: var(--vac-subtytle-height);
-
-    color: var(--white);
+    
     border: 0;
     outline: none !important;
-    background: var(--color-brand);
     border-radius: Var(--border-radius-small);
 }
 
+.__vacance_btn{
+    color: var(--white);
+    background: var(--color-brand);
+}
+.__vacance_btn-cansle{
+    color: var(--color-text);
+    background: var(--color-yelow);
+}
+
+.__vacance_btn-cansle:hover,
 .__vacance_btn:hover {
     cursor: pointer;
 }
 
+.__vacance_btn-cansle:active{
+    outline: none !important;
+    background-color: var(--color-yelow-active);
+}
 .__vacance_btn:active {
     outline: none !important;
     background-color: var(--color-brand-active);
+}
+
+
+.vacance__submited-inform-container{
+    display: flex;
+    flex-direction: column;
+    background: var(--color-yelow);
+    padding: 17px 20px;
+    border-radius: var(--border-radius);
+}
+
+.vacance__submited-inform-container p{
+    font-family: var( --font-family);
+    font-weight: var(--medium);
+    font-size: var(--vac-subtytle-size);
+    line-height: var(--vac-subtytle-height);
+    color: var(--color-request-text);
+}
+
+.vacance__submited-phone-number{
+    margin-bottom: 10px;
+}
+
+.vacance__submited-phone-number p{
+    font-family: var( --font-family);
+    font-weight: var(--semibold);
+    color: var(--color-text);
+    margin-left: 5px;
 }
