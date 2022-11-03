@@ -7,6 +7,9 @@ const HelloPage = () => {
             <Link to='/login'>
                 <h1> Get started !</h1>
             </Link>
+            <Link to='/user-profile'>
+                <h1> User !</h1>
+            </Link>
         </section>
     )
 }

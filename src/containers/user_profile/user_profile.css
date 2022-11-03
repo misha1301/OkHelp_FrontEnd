@@ -7,7 +7,7 @@
     flex-shrink: 0;
     width: 240px;
     min-height: 447px;
-    margin: 26px 0px;
+    margin: 25px 0px;
     padding: 16px;
     background: var(--color-blog);
     box-shadow: var(--box-shadow);
@@ -123,15 +123,18 @@
 }
 
 .active p {
+    outline: none !important;
     color: var(--color-brand);
     font-weight: 600;
 }
 .active .--user__btn {
+    outline: none !important;
     border-radius: 10px;
     background: var(--color-bg);
 }
 
 .active_bg .--user__btn {
+    outline: none !important;
     border-radius: 10px;
     background: var(--color-bg);
 }

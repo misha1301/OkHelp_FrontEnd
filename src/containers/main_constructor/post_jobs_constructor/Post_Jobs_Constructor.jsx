@@ -4,44 +4,90 @@ import './post_jobs_constructor.css';
 import useAuth from '../../hooks/useAuth';
 
 const Post_Jobs_Constructor = () => {
+  const { setUFocus } = useAuth();
 
   const [deadlineCheck, setDeadlineCheck] = useState(false);
   const [numberCheck, setNumberCheck] = useState(true);
   const [socialCheck, setSocialCheck] = useState(false);
   const [locationCheck, setLocationCheck] = useState(false);
+  const [screenWidth, setScreenWidth] = useState();
 
-  const { setUFocus } = useAuth();
+  const [postTytle, setPostTytle] = useState();
+  const [postSubTytle, setPostSubTytle] = useState();
+  const [postAddress, setPostAddress] = useState();
+ 
+  const textarea = document.querySelectorAll(".__area_input-fields");
+
   useEffect(() => {
     setUFocus("Пропоную роботу");
+    setScreenWidth(window.innerWidth);
   }, []);
+
+  const windowSize = () => {
+    setScreenWidth(window.innerWidth);
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', windowSize);
+    return () => {
+      window.removeEventListener('resize', windowSize);
+    }
+  }, [])
+
+  useEffect(() => {
+    textarea.forEach((e) => {
+      e.style.height = '68px';
+      e.style.height = e.scrollHeight + 'px';;
+    });
+  }, [screenWidth, postTytle, postSubTytle, postAddress]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  }
 
   return (
     <section className='main__constructor-container'>
       <div>
-        <form className='user__post_job-form'>
+        <form className='user__post_job-form' onSubmit={handleSubmit}>
           <section className='data__post_job-section'>
             <section className='main__post_job-section'>
               <label><h3>Що ви пропонуєте?*</h3></label>
-              <input
+              <textarea
+                class="__area_input-fields"
+                placeholder="Нариклад:  Помити машину Wolgswagen golf 4"
+                onChange={(e) => setPostTytle(e.target.value)}
+                >
+              </textarea>
+              {/* <input
                 className='input__field-post-job_title __input__fields'
                 type='text'
                 placeholder='Нариклад:  Помити машину Wolgswagen golf 4'
                 autoComplete="off"
-              />
+              /> */}
               <label><h3>Детальніший опис</h3></label>
-              <input
+              <textarea
+                onChange={(e) => setPostSubTytle(e.target.value)}
+                class="__area_input-fields"
+                placeholder="Нариклад: Надаю всі миючі засоби та матеріали">
+              </textarea>
+              {/* <input
                 className='input__field-post-job_subtitle __input__fields'
                 type='text'
                 placeholder='Нариклад: Надаю всі миючі засоби та матеріали'
                 autoComplete="off"
-              />
+              /> */}
               <label><h3>Адреса*</h3></label>
-              <input
+              <textarea
+                onChange={(e) => setPostAddress(e.target.value)}
+                class="__area_input-fields"
+                placeholder="Наприклад: Тернопіль, вул. Сагайдачного 4">
+              </textarea>
+              {/* <input
                 className='input__field-post-job_address __input__fields'
                 type='text'
                 placeholder='Наприклад: Тернопіль, вул. Сагайдачного 4'
                 autoComplete="off"
-              />
+              /> */}
               <div className='paiment__data-container'>
                 <div className='paiment__option-container'>
                   <label><h3>Формат оплати*</h3></label>
@@ -138,8 +184,8 @@ const Post_Jobs_Constructor = () => {
             className='input__btn-post_job __btn'
             type='submit'
             value='Розмістити вакансію'
-
           />
+
         </form>
       </div>
     </section>

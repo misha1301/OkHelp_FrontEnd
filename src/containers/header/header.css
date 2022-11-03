@@ -11,7 +11,7 @@
 .header__container {
     display: flex;
     flex-direction: row;
-    border: solid 1px rgb(95, 53, 53);
+    /* border: 1px dashed #A4A4A4; */
 }
 
 .header__container article {

@@ -23,7 +23,7 @@ const Settings = () => {
             <section className='main__editing-section'>
               <label><h2>Основні</h2></label>
               <input
-                className='input__text_field-reg __size_box-btn-fld'
+                className='input__field-setting-name __input__fields'
                 type='text'
                 placeholder='Ваше імя'
 
@@ -37,7 +37,7 @@ const Settings = () => {
               //onBlur={() => setUserNameFocus(false)}
               />
               <input
-                className='input__text_field-reg __size_box-btn-fld'
+                className='input__field-setting-surname __input__fields'
                 type='text'
                 placeholder='Ваше прізвище'
 
@@ -51,7 +51,7 @@ const Settings = () => {
               //onBlur={() => setUserNameFocus(false)}
               />
               <input
-                className='input__text_field-reg __size_box-btn-fld'
+                className='input__field-setting-phone-number __input__fields'
                 type='text'
                 placeholder='Ваш номер мобільного'
 
@@ -66,7 +66,7 @@ const Settings = () => {
               />
               <label><h2>Безпека</h2></label>
               <input
-                className='input__text_field-reg __size_box-btn-fld'
+                className='input__field-setting-old-pwd __input__fields'
                 type='text'
                 placeholder='Старий пароль'
 
@@ -80,7 +80,7 @@ const Settings = () => {
               //onBlur={() => setUserNameFocus(false)}
               />
               <input
-                className='input__text_field-reg __size_box-btn-fld'
+                className='input__field-setting-new-pwd __input__fields'
                 type='text'
                 placeholder='Новий пароль'
 
@@ -94,7 +94,7 @@ const Settings = () => {
               //onBlur={() => setUserNameFocus(false)}
               />
               <input
-                className='input__text_field-reg __size_box-btn-fld'
+                className='input__field-setting-rep-new-pwd __input__fields'
                 type='text'
                 placeholder='Повторіть новий пароль'
 
@@ -129,10 +129,9 @@ const Settings = () => {
           </section>
 
           <input
-            className=' __size_box-btn-fld __btn_reg-log'
+            className='input__btn-post_job __btn'
             type='submit'
             value='Зберегти'
-
           />
         </form>
       </div>

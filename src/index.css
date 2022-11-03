@@ -12,23 +12,46 @@
 }
 
 :root {
-
   --brand-font: 'Roboto', sans-serif;
   --font-family: 'Montserrat', sans-serif;
+  --color-text: #262626;
+  --color-text-unactive: #A4A4A4;
+  --color-link-text: #369FFF;
+  --color-subtext: #B3B3B3;
+  --color-request-text: #504A34;
+
+  --medium: 500;
+  --vac-subtytle-size: 13px;
+  --vac-subtytle-height: 16px;
+  --semibold: 600;
+  --vac-tytle-size: 15px;
+  --vac-tytle-height: 18px;
+  --vac-line-margin: 25px;
+  --vac-line-padding: 15px;
+  --vac-like-margin-bott: 10px;
+  --vac-body-text-margin-bott: 10px;
+
   --color-brand: #26D19E;
-  --color-brand-gold: #F9DA6C;
+  --color-brand-active: #22c090;
+  --color-yelow: #F9DA6C;
+  --color-yelow-active: #f1d56d;
 
   --box-shadow: 0px 0px 40px 5px rgba(156, 200, 182, 0.3);
   --color-bg: #ebf3f194;
   --color-bg_light: #F7FAF9;
   --color-footer: #FFFFFF;
   --color-blog: #FFFFFF;
-  --color-text: #262626;
-  --color-text-unactive: #A4A4A4;
+
   --color-upload: #434343;
-  --color-link-text: #369FFF;
-  --color-subtext: #B3B3B3;
+
   --border-radius: 20px;
+  --border-radius-small: 10px;
+
   --line: 1px solid #D1DCD9;
+  --input-border: solid 1px var(--color-brand);
+  --input-border-active: solid 1px var(--color-link-text);
+  --input-border-disabled: solid 1px var(--color-bg_light);
+
   --white: white;
+
 }
