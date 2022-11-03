@@ -92,7 +92,7 @@ const Login_Page = () => {
         <Navigate to="/user-profile" atate={{ from: location }} replace />
       ) : (
         <div className='login__block-container __reg-log_block-container'>
-          <h2 className='login__title-text'>Вхід а акаунт</h2>
+          <h2 className='login__title-text'>Вхід в акаунт</h2>
           <p aria-live='assertive' >{errMsg}</p>
           <form className='login__form-fields' onSubmit={handleSubmit}>
             <input
@@ -127,7 +127,7 @@ const Login_Page = () => {
             />
           </form>
           <div className='if__account-yes-no text__mont-med-black'><p>Немає акаунту?</p></div>
-          <Link to='/registration'>
+          <Link className='__size_box-btn-fld' to='/registration'>
             <button className=' __size_box-btn-fld __btn_reg-log' name='go__to-login' id='_login__button'>
               <p className='text__mont-med-black'>Зареєструватись</p>
             </button>

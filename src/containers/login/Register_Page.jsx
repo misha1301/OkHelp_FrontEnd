@@ -107,7 +107,7 @@ const Register_Page = () => {
       return;
     }
     try {
-      const response = await axios.post(SEND_CODE_URL+uemail,
+      const response = await axios.post(SEND_CODE_URL + uemail,
         {
           headers: {
             'Content-Type': 'application/json'
@@ -120,7 +120,7 @@ const Register_Page = () => {
       const status = response?.status;
 
       setEmailVerification(true);
-      setEmailAuth({status, userName, userSurname, number, uemail, pwd });
+      setEmailAuth({ status, userName, userSurname, number, uemail, pwd });
 
     } catch (err) {
       if (!err?.response) {
@@ -242,7 +242,7 @@ const Register_Page = () => {
             />
           </form>
           <div className='if__account-yes-no text__mont-med-black'><p>Є акаунт?</p></div>
-          <Link to='/login'>
+          <Link className='__size_box-btn-fld' to='/login'>
             <button className=' __size_box-btn-fld __btn_reg-log' name='go__to-login' id='_login__button'>
               <p className='text__mont-med-black'>Увійти</p>
             </button>
